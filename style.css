@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+
+body {
+    background-color: #A91079;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 440px;
+    padding-top: 12vh;
+  }
+  .container {
+    background-color: #A91079;
+    color:black;
+    display: flex;
+    gap: 46px;
+  }
+  #posts {
+    width: 90px;
+  }
