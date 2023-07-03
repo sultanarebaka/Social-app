@@ -10,3 +10,14 @@ form.addEventListener("submit", (e) => {
     formValidation();
   });
 
+  let createPost = () => {
+    posts.innerHTML += `
+    <div>
+      <p>${data.text}</p>
+      <span class="options">
+        <i onClick="editPost" class="fas fa-edit"></i>
+        <i onClick="deletePost" class="fas fa-trash-alt"></i>
+      </span>
+    </div>
+    `;}
+
