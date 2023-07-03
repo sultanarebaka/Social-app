@@ -13,5 +13,30 @@ body {
     gap: 46px;
   }
   #posts {
-    width: 90px;
+    width: 140px;
+  
   }
+  .right > h3{
+  margin-bottom: 4px;
+  }
+
+  #posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  div > p{
+    margin-top: 9px;
+  }
+
+  div
+  .options {
+    display: flex;
+    gap: 25px;
+  }
+
+  i {
+    cursor: pointer;
+  }
+  
