@@ -10,6 +10,14 @@ form.addEventListener("submit", (e) => {
     formValidation();
   });
 
+  let data = {};
+
+  let acceptData = () => {
+    data["text"] = input.value;
+    console.log(data);
+    createPost();
+  };
+
   let createPost = () => {
     posts.innerHTML += `
     <div>
@@ -33,6 +41,9 @@ form.addEventListener("submit", (e) => {
     input.value = e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
   };
+
+  
+  
   
   
 
