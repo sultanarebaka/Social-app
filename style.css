@@ -3,14 +3,15 @@
 
 
 body {
+  width:100%;
   background-color: #B2A4FF;
   font-family: 'Nunito', sans-serif;
-  margin: 0 430px;
+  margin: 0 409px;
   padding-top: 12vh;
 }
 
 .container {
-  width:20px;
+  width:100%;
   background-color: #B2A4FF;
   color:black;
   display: flex;
@@ -73,7 +74,8 @@ p{
 }
  button{
   font-family: 'Nunito', sans-serif;
-  background-color:#FFDEB4;
+  background-color:black;
+  color:white;
   height: 30px;
   width: 60px;
   border-radius: 2px;
@@ -84,7 +86,7 @@ p{
 }
 
 button:hover{
-  background-color:black;
-  color: white;
+  font-family: 'Nunito', sans-serif;
+  
   
 }
