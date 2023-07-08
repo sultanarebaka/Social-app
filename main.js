@@ -31,6 +31,13 @@ let acceptData = () => {
   localStorage.setItem("Posts", JSON.stringify(Postsdata));
 };
 
+function Post() {
+
+  window.localStorage.setItem('PostsList', JSON.stringify(PostList));
+  taskList = JSON.parse(window.localStorage.getItem('PostsList'));
+}
+
+
 let createPost = () => {
   posts.innerHTML += `
   <div>
