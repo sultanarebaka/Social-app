@@ -46,7 +46,7 @@ let createPost = () => {
 
 let deletePost = (e) => {
   e.parentElement.parentElement.remove();
-  localStorage.setItem("data", JSON.stringify(data));
+  localStorage.setItem("Posts", JSON.stringify(Postsdata));
   console.log(data);
 };
 
@@ -54,9 +54,11 @@ let editPost = (e) => {
   input.value = e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
 };
+localStorage.setItem('post-list', JSON.stringify(posts));
+  
 
 (() => {
-  data = JSON.parse(localStorage.getItem("data")) || []
-  console.log(data);
+  Posts = JSON.parse(localStorage.getItem("Postsdata")) || []
+  console.log(Posts);
   createPosts();
 })();
