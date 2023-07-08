@@ -1,6 +1,6 @@
 let form = document.getElementById("form");
 let input = document.getElementById("input");
-let msg = document.getElementById("message");
+let message = document.getElementById("message");
 let posts = document.getElementById("posts");
 
 form.addEventListener("submit", (e) => {
@@ -26,6 +26,9 @@ let acceptData = () => {
   data["text"] = input.value;
   console.log(data);
   createPost();
+
+
+  localStorage.setItem("Posts", JSON.stringify(Postsdata));
 };
 
 let createPost = () => {
@@ -43,6 +46,8 @@ let createPost = () => {
 
 let deletePost = (e) => {
   e.parentElement.parentElement.remove();
+  localStorage.setItem("data", JSON.stringify(data));
+  console.log(data);
 };
 
 let editPost = (e) => {
@@ -50,3 +55,8 @@ let editPost = (e) => {
   e.parentElement.parentElement.remove();
 };
 
+(() => {
+  data = JSON.parse(localStorage.getItem("data")) || []
+  console.log(data);
+  createPosts();
+})();
