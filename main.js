@@ -28,8 +28,10 @@ let acceptData = () => {
   createPost();
 
 
-  localStorage.setItem("Posts", JSON.stringify(Postsdata));
-};
+  let PostsStorage = localStorage.getItem("Posts")
+  ? JSON.parse(localStorage.getItem("Posts"))
+  : [];
+}
 
 function Post() {
 
