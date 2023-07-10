@@ -48,10 +48,11 @@ let createPost = () => {
 let deletePost = (e) => {
   e.parentElement.parentElement.remove();
 };
-
+{
 localStorage.setItem("Posts", JSON.stringify(Posts));
+event.parentElement.remove();
 
-
+}
 let editPost = (e) => {
   input.value = e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
@@ -59,3 +60,6 @@ let editPost = (e) => {
 
   // Get the tasks from localStorage and convert it to an array
   let Posts = Array.from(JSON.parse(localStorage.getItem("Posts")));
+
+
+  
