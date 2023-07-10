@@ -41,6 +41,10 @@ let createPost = () => {
   input.value = "";
 };
 
+ // add task to local storage
+ localStorage.setItem("Posts", JSON.stringify([...JSON.parse(localStorage.getItem("Posts") || "[]"), { Post: Post.value, completed: false }]));
+
+
 let deletePost = (e) => {
   e.parentElement.parentElement.remove();
 };
