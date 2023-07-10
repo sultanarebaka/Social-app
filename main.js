@@ -49,6 +49,9 @@ let deletePost = (e) => {
   e.parentElement.parentElement.remove();
 };
 
+localStorage.setItem("Posts", JSON.stringify(Posts));
+
+
 let editPost = (e) => {
   input.value = e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
