@@ -69,3 +69,6 @@ function editTask(event) {
 
 localStorage.setItem("Post", JSON.stringify(PostsArray));
  displayPost();
+
+ let Post = localStorage.getItem("Post");
+        console.log("Post");
