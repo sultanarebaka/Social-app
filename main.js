@@ -62,4 +62,10 @@ let editPost = (e) => {
   let Posts = Array.from(JSON.parse(localStorage.getItem("Posts")));
 
 
-  
+  // edit the task and update local storage
+function editTask(event) {
+  let Posts = Array.from(JSON.parse(localStorage.getItem("Posts")));
+}
+
+localStorage.setItem("Post", JSON.stringify(PostsArray));
+ displayPost();
