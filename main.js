@@ -72,3 +72,6 @@ localStorage.setItem("Post", JSON.stringify(PostsArray));
 
  let Post = localStorage.getItem("Post");
         console.log("Post");
+
+
+        localStorage.getItem("Post"); // returns 'Post'
