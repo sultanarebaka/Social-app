@@ -49,7 +49,6 @@ let deletePost = (e) => {
   e.parentElement.parentElement.remove();
 };
 {
-  localStorage.setItem("Posts", JSON.stringify(PostsData));
 
 
 }
@@ -71,7 +70,7 @@ localStorage.setItem("Post", JSON.stringify(PostsArray));
  displayPost();
 
 
-        PostsData.push(PostObj);
+ PostsData.push(PostObj);
   localStorage.setItem("Posts", JSON.stringify(PostsData));
 
   localStorage.setItem("Posts", JSON.stringify(PostsData));
