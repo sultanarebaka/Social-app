@@ -76,5 +76,3 @@ localStorage.setItem("Post", JSON.stringify(PostsArray));
 
  PostsData.push(PostObj);
   localStorage.setItem("Posts", JSON.stringify(PostsData));
-
-  localStorage.setItem("Posts", JSON.stringify(PostsData));
