@@ -65,6 +65,12 @@ let editPost = (e) => {
   let Posts = Array.from(JSON.parse(localStorage.getItem("Posts")));
 
 
+  let saved = localStorage.getItem("Postlist");
+  if (saved) {
+    PostList = JSON.parse(localStorage.getItem("Postlist"));
+    render(PostList);
+  }
+
   // edit the task and update local storage
 function editTask(event) {
   let Posts = Array.from(JSON.parse(localStorage.getItem("Posts")));
