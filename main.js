@@ -49,7 +49,11 @@ let deletePost = (e) => {
   e.parentElement.parentElement.remove();
 };
 {
+  function syncPost() {
 
+    window.localStorage.setItem('PostList', JSON.stringify(PostList));
+    PostList = JSON.parse(window.localStorage.getItem('PostList'));
+  }
 
 }
 let editPost = (e) => {
