@@ -86,3 +86,16 @@ localStorage.setItem("Post", JSON.stringify(PostsArray));
 
  PostsData.push(PostObj);
   localStorage.setItem("Posts", JSON.stringify(PostsData));
+
+
+  // setting local storage
+
+function setLocalStorage() {
+
+    if (localStorage.getItem('PostData')) {
+        let showDiv = document.querySelector('#show');
+        showDiv.innerHTML = "";
+        
+        let arr = JSON.parse(localStorage.getItem('PostData'));
+    }
+  }
