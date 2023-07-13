@@ -54,6 +54,10 @@ let deletePost = (e) => {
     window.localStorage.setItem('PostList', JSON.stringify(PostList));
     PostList = JSON.parse(window.localStorage.getItem('PostList'));
   }
+  localStorage.setItem('notes', JSON.stringify(notes));
+
+const Post = localStorage.getItem('Post');
+    console.log('Post');
 
 }
 let editPost = (e) => {
