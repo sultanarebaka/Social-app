@@ -99,3 +99,7 @@ function setLocalStorage() {
         let arr = JSON.parse(localStorage.getItem('PostData'));
     }
   }
+  PostClear.addEventListener("click", function() {
+    localStorage.clear();
+  }
+  );
