@@ -65,8 +65,8 @@ let editPost = (e) => {
   e.parentElement.parentElement.remove();
 };
 
-  // Get the tasks from localStorage and convert it to an array
-  let Posts = Array.from(JSON.parse(localStorage.getItem("Posts")));
+  // an array
+   Array.from(JSON.parse(localStorage.getItem("Posts")));
 
 
   let saved = localStorage.getItem("Postlist");
