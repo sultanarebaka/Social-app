@@ -81,6 +81,17 @@ let editPost = (e) => {
     render(PostList);
   }
 
+  function Post() {
+
+    if (!!(window.localStorage.getItem('PostList'))) {
+      PostList = JSON.parse(window.localStorage.getItem('PostList'));
+    } else {
+      PostList = [];
+    }
+    btnSave.addEventListener('click', savePost);
+    showList();
+  }
+
   // edit the task and update local storage
 function editTask(event) {
   let Posts = Array.from(JSON.parse(localStorage.getItem("Posts")));
