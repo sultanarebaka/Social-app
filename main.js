@@ -68,6 +68,7 @@ let editPost = (e) => {
   // an array
    Array.from(JSON.parse(localStorage.getItem("Posts")));
 
+   date: new Date().toLocaleDataString();
 
   let saved = localStorage.getItem("Postlist");
   if (saved) {
