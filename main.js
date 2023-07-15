@@ -40,6 +40,8 @@ let createPost = () => {
   `;
   input.value = "";
 };
+PostsData.push(PostObj);
+  localStorage.setItem("Posts", JSON.stringify(PostsData));
 
  // add task to local storage
  localStorage.setItem("Posts", JSON.stringify([...JSON.parse(localStorage.getItem("Posts") || "[]"), { Post: Post.value, completed: false }]));
@@ -60,6 +62,9 @@ const Post = localStorage.getItem('Post');
     console.log('Post');
 
 }
+
+JSON.parse(localStorage.getItem('Posts'))
+
 let editPost = (e) => {
   input.value = e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
@@ -84,9 +89,6 @@ function editTask(event) {
 localStorage.setItem("Post", JSON.stringify(PostsArray));
  displayPost();
 
-
- PostsData.push(PostObj);
-  localStorage.setItem("Posts", JSON.stringify(PostsData));
 
 
   // setting local storage
