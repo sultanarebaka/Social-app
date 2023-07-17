@@ -117,3 +117,9 @@ function setLocalStorage() {
     localStorage.clear();
   }
   );
+  window.addEventListener("load", () => {
+    PostsData = localStorage.getItem("Posts")
+      ? JSON.parse(localStorage.getItem("Posts"))
+      : [];
+
+  });
